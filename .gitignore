@@ -1,0 +1,4 @@
+# Archivos que no necesitamos subir al repositorio
+.DS_Store
+Thumbs.db
+*.log
