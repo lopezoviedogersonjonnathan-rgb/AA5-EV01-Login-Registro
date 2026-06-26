@@ -26,10 +26,19 @@ $password_db = "";
 // Debe ser IGUAL al que ves en phpMyAdmin y al que crea basedatos.sql.
 $nombre_db = "login_db";
 
+// Puerto donde está escuchando tu MySQL de XAMPP.
+// Lo normal es el 3306, PERO en este computador el 3306 ya está
+// ocupado por otro programa, así que XAMPP quedó configurado para
+// usar el 3307 (lo confirmamos mirando phpMyAdmin: dice "Servidor: 127.0.0.1:3307").
+// Si en tu caso es distinto, cambia este número por el que te
+// aparezca al lado de "MySQL" en el Panel de Control de XAMPP.
+$puerto_db = 3307;
+
 // "mysqli" es una clase que ya trae PHP para hablar con MySQL.
 // Aquí creamos un OBJETO llamado $conn ("conexión"), pasándole
-// host, usuario, contraseña y nombre de la base de datos en ese orden.
-$conn = new mysqli($host, $usuario_db, $password_db, $nombre_db);
+// host, usuario, contraseña, nombre de la base de datos y PUERTO,
+// en ese orden exacto.
+$conn = new mysqli($host, $usuario_db, $password_db, $nombre_db, $puerto_db);
 
 // $conn->connect_error nos dice si algo falló al conectar
 // (por ejemplo: Apache o MySQL apagados en el panel de XAMPP,
