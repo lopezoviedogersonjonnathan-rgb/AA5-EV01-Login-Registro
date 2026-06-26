@@ -1,11 +1,3 @@
 ENLACE DEL REPOSITORIO
 =======================
-
-Pega aquí la URL de tu repositorio en GitHub después de subir el proyecto
-con Git Bash (sección 4 del README.md).
-
-Ejemplo:
-https://github.com/tu-usuario/AA5-EV01-login
-
-Enlace:
-
+https://github.com/lopezoviedogersonjonnathan-rgb/AA5-EV01-Login-Registro
